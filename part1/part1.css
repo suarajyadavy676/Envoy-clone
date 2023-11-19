@@ -1,0 +1,12 @@
+#part1>h1{
+    width: 50%; margin: auto; text-align: center; font-size: 50px; 
+}
+#part1>div{
+    text-align: center; margin: 50px;
+}
+#part1>div>button{
+    width: 120px; height: 40px; margin: 10px; color: red; font-weight: bold; border-radius: 6px; border: 1px solid white;
+}
+#part1>div>img{
+    width: 100%; z-index: -1 ;position:absolute; left: 0;
+}

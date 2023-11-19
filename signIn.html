@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #sign{
+            width: 40%; height: 200px; background-color: bisque; margin:200px auto;
+        }
+        #email{
+            margin-bottom: 40px;
+        }
+        button{
+            width: 60px; background-color: red; height: 30px; margin-top: 20px; border: 2px solid red; border-radius: 6px; margin-left: 60px; color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="sign">
+        <div style="width: 40%; margin: 40px auto;">
+            <label for="">Enter Email</label><br>
+            <input id="email" type="text" placeholder="email"><br>
+            <label for="">Enter Your Password</label> <br>
+            <input id="password" type="password" placeholder="password"> <br>
+            <button onclick="signin()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        let email = document.getElementById('email')
+        let password = document.getElementById('password')
+        function signin(){
+            localpassword = localStorage.getItem('password')
+            localemail = localStorage.getItem("email")
+            console.log(localemail)
+            console.log(localpassword)
+            if(email.value == localemail && password.value == localpassword){
+                window.location.href = "https://www.masaischool.com/"
+                } 
+                else{
+                    alert("Please enter currect detail")
+                }
+        }
+        // buttons.addEventListener('click',function(){
+        //     console.log('hello')
+        //     if(email == localemail && password == localpassord){
+        //         window.location.href = "https://www.masaischool.com/"
+        //     } else{
+        //         alert("Please enter currect detail")
+        //     } 
+        // })
+    </script>
+</body>
+</html>

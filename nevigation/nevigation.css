@@ -1,0 +1,14 @@
+img{
+    width: 30px;
+}
+#nevi{
+    display: grid; grid-template-columns: 30% 80%; justify-items: center;
+}
+#item{
+    display: grid; grid-template-columns: repeat(8,1fr); 
+}
+#item > h3 > button{
+    background-color: red; color: white; border: 2px solid red; height: 40px; width: 100px; border-radius: 5px;
+}
+#item>h3 {cursor: pointer;}
+button {cursor: pointer;}

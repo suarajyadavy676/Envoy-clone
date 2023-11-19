@@ -1,0 +1,13 @@
+#callingPart{
+    width: 80%; margin:50px auto; display: flex; justify-content: space-between; align-items: center;
+}
+#psrc{
+    display: flex; justify-content: space-between; width: 80%;
+    margin-left: 150px;
+}
+hr{
+    margin-top: 20px; margin-bottom: 20px; border: 1px solid rgb(244, 230, 230);
+}
+#number{
+    width: 80%; margin: auto; height: 100px;
+}

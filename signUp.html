@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create account</title>
+    <style>
+        img{
+            width: 50px; height: 50px;
+        }
+        #signup{
+            display: flex; width: 65%; margin: 50px auto; border: 2px solid red; height: 550px; padding-left: 20px;
+        }
+        input{
+            width: 90%; margin-bottom: 40px;
+        }
+        #signup>div>p{
+            font-size: 13px;
+        }
+        button{
+            background-color: red; color: white; align-items: center; border: 2px solid red; border-radius: 4px; width: 70px;
+            height: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="display: flex; width: 10%; justify-content: space-between; margin: 50px;">
+        <img src="fevicon.png" alt="">
+        <h1 style="display: inline; margin-top: 0px;"> Envoy</h1>
+    </div>
+    <div id="signup">
+        <div style="width: 60%;">
+            <h3>Create your Envoy acount</h3>
+            <label for="">email</label> <br>
+            <input type="email" id="email">
+            <div style="display: flex; width: 90%; margin: auto; justify-content: space-around;">
+                <div>
+                    <label for=""> First name</label> <br>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Last name</label><br>
+                    <input type="text">
+                </div>
+            </div>
+            <label for="">Mobile number</label><br>
+            <input type="number"> <br>
+            <label for="">Create password</label>
+            <input type="password" id="password">
+            <p>Password must be at least 8 characters and contain at least one capital letter, one lower case letter, and one number.</p>
+            <p>By clicking "Next" you agree to receive marketing communications from Envoy</p>
+            <div style="text-align: right; margin-right: 20px;">
+            <button id="btn">Next ></button>
+            </div>
+        </div>
+
+        <div style="background-color: rgb(240, 240, 246); width: 40%; width: 40%;">
+            <div>
+                <div>
+                    <h1 style="width: 60%; margin: auto; padding-top: 120px;">Envoy saves administrators an average of <span style="color: red;">100 hours</span>  per year</h1>
+                </div>
+                <div>
+                    <p style="text-align: center; padding-top: 150px;">Based on an Envoy customer survey</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let sinupEmail = document.getElementById('email')
+        let signuPassword = document.getElementById('password')
+        let nextBtn = document.querySelector('#btn')
+        nextBtn.addEventListener('click',function(){
+            let localEmail = localStorage.setItem('email',sinupEmail.value)
+            let loacalPassword = localStorage.setItem("password",signuPassword.value)
+            window.location.href = 'signIn.html'
+        })
+    </script>
+</body>
+</html>

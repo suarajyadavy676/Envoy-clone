@@ -1,0 +1,9 @@
+#part3>div{
+    width: 40%; margin: auto;
+}
+#part3>div>img{
+    width: 60%;
+}
+#part3>div>button{
+    color: white; background-color: blue; width: 20%; height: 40px; border-radius: 8px; font-weight: bold;
+}
