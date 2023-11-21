@@ -2,14 +2,17 @@
     font-size: 50px; text-align: center;
 }
 #part4s1{
-    display: flex; width: 70%; justify-content: space-between; margin: auto;
-}
-#part4s1>div{
-    width: 17%;
-}
-#part4s1>div>p{
-    font-size: 50px; color: rgb(40, 40, 121); padding: 0px; margin: 0;
+    display: grid; width: 80%; grid-template-columns: repeat(4,1fr); margin: auto; gap: 20px;
 }
 #part4s1>div>h3{
-    color: rgb(128, 118, 118);
+    color: rgb(100, 97, 97); font-size: 25px;
+}
+#part4s1>div>p{
+    color: rgb(12, 12, 145); font-size: 50px; font-weight: bold;
+}
+
+@media screen and (max-width:990px){
+    #part4s1{
+        width: 40%; grid-template-columns: repeat(1,1fr);
+    }
 }

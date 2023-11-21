@@ -5,10 +5,132 @@ img{
     display: grid; grid-template-columns: 30% 80%; justify-items: center;
 }
 #item{
-    display: grid; grid-template-columns: repeat(8,1fr); 
+    display: grid; grid-template-columns: repeat(8,1fr);
+}
+#item>h3{
+     height: 50px; width: 140%;
 }
 #item > h3 > button{
     background-color: red; color: white; border: 2px solid red; height: 40px; width: 100px; border-radius: 5px;
 }
+#item > h3 > button:hover{
+    background-color: yellowgreen;
+}
 #item>h3 {cursor: pointer;}
 button {cursor: pointer;}
+
+#menup{
+    position: relative;
+}
+#submenup{
+    position: absolute; top: 30px; width: 200px; height: 100px;
+    display: none; background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#menup:hover #submenup{
+    display: block;
+}
+#submenup>p{
+    margin-left: 10px;
+}
+#submenup>p:hover{
+    background-color: bisque;
+}
+#menua{
+    position: relative;
+}
+#submenua{
+    position: absolute; top: 30px; width: 150px; height: 150px;
+    display: none; background-color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#submenua>p{
+    margin-left: 10px;
+}
+#menua:hover #submenua{
+    display: block;
+}
+#submenua>p:hover{
+    background-color: bisque;
+}
+
+#menur{
+    position: relative;
+}
+#hovers{
+    display: none; height: 100px;
+}
+#submenur{
+    position: absolute; width: 400px;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; display: grid; grid-template-columns: repeat(2,1fr); background-color: white; top: 50px; margin-right: 500px;
+
+}
+#submenur>div:nth-child(1){
+    margin-left: 20px;
+}
+#submenur>div>p:hover{
+    background-color: yellow;
+}
+#menur:hover #hovers{
+    display: block;
+}
+#part1>div>button{
+    position:absolute; z-index: -1;
+}
+#submenur>div:nth-child(2){
+    background-color: #ece9e9;
+}
+
+#menus{
+    position: relative;
+}
+#hoverso{
+    display: none;
+}
+#submenus{
+    position: absolute; width: 400px;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; display: grid; grid-template-columns: repeat(2,1fr); background-color: white; top: 40px;
+}
+#submenus>div:nth-child(1){
+    margin-left: 20px;
+}
+#submenus>div>p:hover{
+    background-color: yellow;
+}
+#menus:hover #hoverso{
+    display: block;
+}
+#submenus>div:nth-child(2){
+    background-color: #ece9e9;
+}
+#hoverpr{
+    display: none;
+}
+
+#menupr{
+    position: relative;
+}
+#submenupr{
+     display: grid; grid-template-columns: repeat(2,1fr); width: 400px; position: absolute;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; background-color: white; top: 40px;
+}
+#menupr:hover #hoverpr{
+    display: block;
+}
+#submenupr>div>p:hover{
+    background-color: yellowgreen;
+}
+#submenupr>div:nth-child(1){
+    margin-left: 20px;
+}
+#hamburger{
+    display: none;
+}
+
+@media screen and (max-width:990px) {
+    #item{
+        display: none;
+    }
+    #nevi{
+        display: flex; width: 90%; justify-content: space-between;
+    }
+    #hamburger{
+        display: block; margin-right: 0; align-items: right;font-size: 50px;
+    }
+}
+

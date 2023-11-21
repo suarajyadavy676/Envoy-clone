@@ -1,3 +1,6 @@
+#part8{
+    width: 100%; min-height: 750px;
+}
 #callingPart{
     width: 80%; margin:50px auto; display: flex; justify-content: space-between; align-items: center;
 }
@@ -10,4 +13,51 @@ hr{
 }
 #number{
     width: 80%; margin: auto; height: 100px;
+}
+#footer{
+    width: 100%; background-color: #f6f6f9;
+}
+#last{
+    display: grid; grid-template-columns: repeat(3,1fr); width: 90%; justify-items: end; margin: auto; align-items: center;
+}
+#contact{
+    display: flex; width: 115%; justify-content: space-between;
+}
+#social{
+    display: flex; width: 40%; justify-content: space-between;
+
+}
+
+@media screen and (max-width : 890px){
+    #callingPart{
+        width: 90%; flex-direction: column;
+    }
+    #psrc{
+        display: grid; grid-template-columns: repeat(3,1fr); width: 95%; margin-left: 50px;
+    }
+    #last{
+        display: grid; grid-template-columns: repeat(3,1fr); width: 90%; justify-items: end; margin: auto; align-items: center;
+    }
+    #contact{
+        display: flex; flex-direction: column; width: 100%; 
+    }
+    #social{
+        display: flex; width: 40%; justify-content: space-between;
+    
+    }
+}
+
+@media screen and (max-width:760px){
+    #psrc{
+        grid-template-columns: repeat(2,1fr); width: 90%; margin: 40px;
+    }
+    #last{
+         grid-template-columns: repeat(1,1fr);
+    }  
+}
+
+@media screen and (max-width:470px) {
+    #psrc{
+        grid-template-columns: repeat(1,1fr); width: 90%;
+    }
 }

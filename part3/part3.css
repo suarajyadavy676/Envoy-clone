@@ -1,9 +1,29 @@
-#part3>div{
-    width: 40%; margin: auto;
+#part3{
+    width: 100%; min-height: 600px; border: 2px solid red; margin: 10px; background-color: red; display: grid; color: white;
+    grid-template-columns: repeat(2,1fr);
 }
 #part3>div>img{
-    width: 60%;
+    width: 60%; margin: 40px;
 }
+#part3>div>div>img{
+    width: 60%; margin: 40px;
+}
+
 #part3>div>button{
     color: white; background-color: blue; width: 20%; height: 40px; border-radius: 8px; font-weight: bold;
+}
+
+@media screen and (max-width : 990px){
+    #part3{
+        grid-template-columns: 1fr;
+    }
+    #part3>div{
+        margin: 10%;
+    }
+    #part3>div>img{
+        width: 80%;
+    }
+    #part3>div>button{
+        width: 40%;
+    }
 }

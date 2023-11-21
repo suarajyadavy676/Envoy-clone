@@ -1,12 +1,21 @@
 #part1>h1{
-    width: 50%; margin: auto; text-align: center; font-size: 50px; 
+    width: 60%; margin: auto; text-align: center; font-size: 50px; 
 }
 #part1>div{
     text-align: center; margin: 50px;
 }
 #part1>div>button{
-    width: 120px; height: 40px; margin: 10px; color: red; font-weight: bold; border-radius: 6px; border: 1px solid white;
+    width: 120px; min-height: 40px; margin: 10px; color: red; font-weight: bold; border-radius: 6px; border: 1px solid white; position: relative;
 }
 #part1>div>img{
-    width: 100%; z-index: -1 ;position:absolute; left: 0;
+    width: 100%; z-index: -2 ;position:absolute; left: 0;
+}
+
+@media screen and (max-width:990px) {
+    #part1>h1{
+        width: 95%; font-size: 30px; 
+    }
+    #part1>div>img{
+    top: 400px;
+}
 }
