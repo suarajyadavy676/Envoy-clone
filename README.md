@@ -1,5 +1,12 @@
-1.In this project first create HTML(Hypertext Markup Language) page and project devide in parts.
-2.and then use CSS(Cascading Style Sheets) all part of css in different folder
-3.and then using JS(JavaScript),with the help of DOM(Document Object Model) catch html tag and add function in website.
-4.In this website first get started button when click this button you can access sign up page and then create password.
-5. when click on login button then use sign up time email and passord the land on actual page.
+# Envoy Website Clone
+
+A responsive and visually appealing clone of the Envoy website, developed using HTML, CSS, and JavaScript.
+
+## Description
+
+This project replicates the Envoy website with a focus on creating a responsive and dynamic interface. Custom animations and transitions are implemented to match the original design. Ensures cross-browser compatibility and performance optimization for a seamless user experience.
+
+## Installation
+
+1. Clone the repository:
+   git clone url
